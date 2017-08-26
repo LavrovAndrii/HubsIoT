@@ -7,7 +7,7 @@ using HubsIoT.Models.DbEntities;
 
 namespace HubsIoT.Models
 {
-    public class ScopeDbContext : DbContext
+    public class ApplicationDbContext : DbContext
     {
         public DbSet<Device> Devices { set; get; }
         public DbSet<InternetModule> InternetModules { get; set; }
