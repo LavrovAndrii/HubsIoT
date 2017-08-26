@@ -17,4 +17,20 @@ namespace HubsIoT.Models
         public DbSet<AvaibleAnalogPort> AvaibleAnalogPorts { get; set; }
         public DbSet<AvaibleDigitalPort> AvaibleDigitalPorts { get; set; }
     }
-}
+
+    public class ScopeDbInitializer : DropCreateDatabaseAlways<ScopeDbContext>
+    {
+        protected override void Seed(ScopeDbContext db)
+        {
+          //  db.Devices.Add(new Device {NameDevice = "Arduino Uno R3", TypeDeviceId = 1, });
+        }
+    }
+
+    public class ApplicationDbInitializer : DropCreateDatabaseAlways<ScopeDbContext>
+    {
+        protected override void Seed(ScopeDbContext db)
+        {
+            //  db.Devices.Add(new Device {NameDevice = "Arduino Uno R3", TypeDeviceId = 1, });
+        }
+    }
+}   

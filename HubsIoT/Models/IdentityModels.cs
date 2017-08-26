@@ -21,7 +21,7 @@ namespace HubsIoT.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("ScopeDbContext", throwIfV1Schema: false)
+            : base("ScopeDbConnection", throwIfV1Schema: false)
         {
         }
 
